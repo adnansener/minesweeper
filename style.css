@@ -1,0 +1,141 @@
+.input
+{
+    border:none;
+    font-size:10px;
+}
+
+.input:focus
+{
+    outline:none;
+}
+
+h2
+{
+    color: black;
+}
+
+.table
+{
+    background-color: white;
+}
+
+body
+{
+    background-color: black;
+    color: white;
+}
+
+button 
+{
+    width: 32px;
+    height: 32px;
+}
+
+#container 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+#inner-container
+{
+    text-align: center;
+}
+
+#inner-container > h1
+{
+    font-size: 100px;
+}
+
+#start, #hint
+{
+    width: auto;
+}
+
+#hint, #flag-remaining
+{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: -100px;
+}
+
+#hint-list
+{
+    margin-left: -20px;
+}
+
+#hint, #hint-list 
+{
+    visibility: hidden;
+    float: left;
+}
+
+#flag-remaining
+{
+    max-width: 100px;
+    float: right;
+    visibility: hidden;
+    text-align: center;
+}
+
+#play
+{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    width: 150px;
+    height: 100px;
+}
+  
+#play:hover
+{
+    background-color: #474444
+}
+  
+#play:active
+{
+    background-color: #474444;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#helper
+{
+    visibility: hidden;
+    text-align: center;
+    float: center;
+    width: 100%;
+}
+
+.middle-of-helper
+{
+    text-align: center;
+    max-width: 200px;
+    position: relative;
+    margin: auto;
+    float: none;
+}
+
+.right-of-helper
+{
+    float: left;
+    max-width: 200px;
+}
+
+#hint-list
+{
+    margin-top: -80px;
+    margin-right: 80px;
+}

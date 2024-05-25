@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div id="helper">
+            <h1 id = "title-text">
+                MINESWEEPER
+            </h1>
+
+            <div class="middle-of-helper" id="middle-of-helper">
+                <label for="size">Choose a size:</label>
+                <select name="size" id="size">
+                    <option value="size">-select-</option>
+                    <option value="size">4x4</option>
+                    <option value="size">5x5</option>
+                    <option value="size">6x6</option>
+                    <option value="size">7x7</option>
+                    <option value="size">8x8</option>
+                    <option value="size">9x9</option>
+                    <option value="size">10x10</option>
+                    <option value="size">11x11</option>
+                    <option value="size">12x12</option>
+                    <option value="size">13x13</option>
+                    <option value="size">14x14</option>
+                    <option value="size">15x15</option>
+                    <option value="size">16x16</option>
+                </select><br>
+                <button id="start">Create a new Game</button>
+            </div>
+
+            <div class="right-of-helper">
+                <button id="hint">Show Bomb Sides</button><br>
+                <p id="hint-list"></p>
+            </div>
+        </div>
+
+        <div id = 'container'>
+            <div id="inner-container">
+                <h1>
+                    MINESWEEPER
+                </h1>
+
+                <button id="play">
+                    PLAY
+                </button>
+            </div>
+        </div>
+
+        <p id="flag-remaining"></p>
+
+        <script src="script.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                $("#hint").hover(
+                function()
+                {
+                    $("#hint-list").css("visibility", "visible");
+                },
+                function()
+                {
+                    $("#hint-list").css("visibility", "hidden");
+                });
+            });
+        </script>
+    </body>
+</html>
